@@ -14,7 +14,7 @@ header{
 }
 .titulo{
 	text-align: center;
-	font-weight: bolder;
+	font-weight: bold;
 	font-size: 45px;
 	color: white;
 	margin-bottom: 0px;
@@ -49,12 +49,16 @@ header{
 	margin-right: 40px;
 }
 .estrategia-text{
-	margin-top: 30px;
+	margin-top: 15px;
+	padding-right: 20px;
 }
 .estrategia-text h3{
 	font-weight: bold;
 	color: #41c3d5;
 	font-size: 50px;
+}
+.estrategia-text p{
+	font-size: 12px;
 }
 .estrategia .contenedor{
 	display: flex;
@@ -71,3 +75,31 @@ header{
 	font-size: medium;
 	margin-left: 30px;
 }
+.enviar{
+	background: #41c3d5;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	border: solid;
+	padding: 10px 40px;
+	margin-left: 45px;
+}
+#linea{ 
+   border: 1;
+   height: 2px;
+   text-align: center;
+   background-image: linear-gradient(left, #fff, #000, #fff);
+}
+.clientes{
+	margin-top: 40px;
+}
+.contenedor-cli h3{
+	color: #41c3d5;
+	font-weight: bold;
+	width: 800px;
+	margin:auto;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
+
