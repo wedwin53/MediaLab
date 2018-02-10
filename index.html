@@ -1,105 +1,207 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>MediaLab - Agencia de publicidad y comunicacion digital</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Open+Sans|Montserrat" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="es"><head>
+<title>MediaLab - Agencia de publicidad y comunicacion digital</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" charset="UTF-8"><!-- Archivos CSS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Open+Sans|Montserrat" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Archivos JavaScript -->	
+<script type="text/javascript"  src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="js/script.js"></script>
 </head>
 <body>
-	<header id="header" class="header"> <!-- logo -->
-		<figure class="logotipo">
-			<img src="img/logo-medialab.png" alt="MediaLab - logotipo">
-			<!-- <img src="img/pc-portada.png"> -->
-		</figure>
-	</header>
-	<section id="portada" class="portada"> <!-- portada -->
-		<div class="contenedor">
-			<h1 class="titulo">IN DIGITAL WE TRUST</h1>
-			<h3 class="title-a">Estrategia Digital aplicada para hacer crecer su negocio</h3>
-			<button class="button">CONOZCÁMONOS</button> <!-- boton -->
-		</div>
-	</section>
-	<section class="estrategia"> <!-- estrategia -->
-		<div class="contenedor">
-			<div class="estrategia-text">
-				<h3>ESTRATEGÍA <br>DIGITAL</h3>
-				<p>Las empresas de nuestros clientes se convierte en nuestra empresa porque
-				juntos la vemos crecer basado en sus necesidades. Somos Google Partner
-			premier respaldando experiencia y profesionalismo.</p>
-			<p><i class="fa fa-check fa-2x" style="color: #41c3d5"></i> Set ut perpiciate unde omnis iste natus error sit voluptatem.</p>
-			<p><i class="fa fa-check fa-2x" style="color: #41c3d5"></i> Set ut perpiciate unde omnis iste natus error sit voluptatem.</p>
-			<p><i class="fa fa-check fa-2x" style="color: #41c3d5"></i> Set ut perpiciate unde omnis iste natus error sit voluptatem.</p>
-			</div>
-			<form class="formulario">
-				<div class="controles-form">
-					<label id="lb-conozcamonos">CONOZCÁMONOS</label>
-					<div class="form-group">
-					<input class="form-control" type="text" name="nombre" placeholder="Nombre">
+    <div class="container">    
+        <header class="row">
+            <div class="col-xs-3 text-center">
+                
+            </div>
+            <div class="col-xs-6 text-center titulo" id="tit">            
+                <h1>IN DIGITAL WE TRUST</h1>
+                <h3>Estrategia Digital aplicada para hacer crecer su negocio</h3>
+                <button class="button">CONOZCÁMONOS</button> <!-- boton -->                
+            </div>
+            <div class="col-xs-3 text-center logo">
+                <img src="img/logo-medialab.png" alt="MediaLab - logotipo">
+            </div>            
+        </header>
+
+        <div class="row" id="stg">
+            <div class="col-xs-12 col-md-6 estrategia">
+                <div class="col-xs-12">
+                    <h3>ESTRATEGÍA <br>DIGITAL</h3>
+                </div>
+                <div class="col-xs-12">
+                    <p>
+                        Las empresas de nuestros clientes se convierte en nuestra empresa porque juntos la vemos crecer basado en sus necesidades. Somos Google Partner premier respaldando experiencia y profesionalismo
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <ul>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</li>
+                        <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</li>
+                        <li>Sed quia consequuntur magni dolores eos qui ratione.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <form class="formulario">
+                    <div class="controles-form row">
+                        <label class="lb-conozcamonos col-xs-12 text-center">CONOZCÁMONOS</label>
+                        <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                        <input class="form-control type="text" name="telefono" placeholder="Télefono" required>
+                        </div>
+                        <div class="form-group">
+                        <input class="form-control type="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group col-xs-12 text-center">
+                            <input type="button" name="button" value="Enviar" class="enviar" onclick="">
+                        </div>                  
+                    </div>
+                </form>
+            </div>
+        </div><!-- End row -->
+
+        <div class="row contenedor clientes">
+            <h3 class="text-center">NUESTROS CLIENTES</h3>            
+            <div class="col-xs-11 col-md-10 col-centered">
+	            <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="carousel-col">
+								<div class="text-center"><img src="img/monge.png"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-col">
+								<div class="text-center"><img src="img/tigo.png"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-col">
+								<div class="text-center"><img src="img/pfiser.png"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-col">
+								<div class="text-center"><img src="img/sucre.png"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-col">
+								<div class="text-center"><img src="img/seguro-social.png"></div>
+							</div>
+						</div>
 					</div>
-					<div class="form-group">
-					<input class="form-control type="text" name="telefono" placeholder="Télefono">
+
+					<!-- Controls -->
+					<div class="left carousel-control">
+						<a href="#carousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
 					</div>
-					<div class="form-group">
-					<input class="form-control type="email" name="email" placeholder="Correo electrónico">
+					<div class="right carousel-control">
+						<a href="#carousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-					<div class="form-group">
-						<input type="button" name="button" value="Enviar" class="enviar">
-					</div>					
 				</div>
-			</form>
-		</div> <!-- termina contenedor -->
-	</section>
-	<hr id="linea">
-	<section class="clientes contenedor"> <!-- clientes -->
-		<div class="contenedor-cli">
-			<h3>NUESTROS CLIENTES</h3>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <!-- Indicators -->
-	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1"></li>
-	      <li data-target="#myCarousel" data-slide-to="2"></li>
-	    </ol>
+			</div>
+        </div><!-- End row -->
 
-	    <!-- Wrapper for slides -->
-	    <div class="carousel-inner">
-	      <div class="item active">
-	        <img src="img/monge.png" alt="Monge" style="width:30%;">
-	      </div>
+        <br>
 
-	      <div class="item">
-	        <img src="img/pfiser.png" alt="Pfiser" style="width:30%;">
-	      </div>
-	    
-	      <div class="item">
-	        <img src="img/tigo.png" alt="Tigo" style="width:30%;">
-	      </div>
-	    </div>
+        <div class="otros-servicios row" id="os">
+            <div class="col-xs-12">
+                <h3 class="text-center">OTROS SERVICIOS</h3>
+            </div>
 
-	    <!-- Left and right controls -->
-	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	      <span class="glyphicon glyphicon-chevron-left"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-right"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	</div>
-	</section>
-	<section> <!-- otros servicios -->
-		
-	</section>
-	<section> <!-- reconocimientos -->
-		
-	</section>
-	<footer> <!-- footer -->
-		
-	</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <div class="servicios">
+                <div class="col-xs-12 col-md-4">
+                    <div class="servicio-item text-center">
+                        <div>
+                            <img src="img/servicios01.png">
+                        </div>
+                        <div>
+                            <h4>Servicio 01</h4>
+                            <p>Las empresas de nuestros clientes se convierte en nuestra empresa</p>
+                            <button>Contactar</button>
+                        </div>
+                    </div>                                       
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="servicio-item text-center">
+                        <div>
+                            <img src="img/servicios02.png">
+                        </div>
+                        <div>
+                            <h4>Servicio 02</h4>
+                            <p>Las empresas de nuestros clientes se convierte en nuestra empresa</p>
+                            <button>Contactar</button>
+                        </div>
+                    </div>                                     
+                </div>
+                
+                <div class="col-xs-12 col-md-4">
+                    <div class="servicio-item text-center">
+                        <div>
+                            <img src="img/servicios03.png">
+                        </div>
+                        <div>
+                            <h4>Servicio 03</h4>
+                            <p>Las empresas de nuestros clientes se convierte en nuestra empresa</p>
+                            <button>Contactar</button>
+                        </div>
+                    </div>                 
+                </div>
+            </div><!-- End row -->
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <button class="descubre">Descubre lo que hacemos</button>
+                </div>
+            </div>
+        </div><!-- /otros Servicios -->
+
+        <div class="premios-certificados row">
+            <div class="col-xs-12 col-md-6 rigth-line">
+                <h2>Premios</h2>                
+                <img src="img/premio01.png">
+                <img src="img/premio02.png">                
+            
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2>Certificados</h2>
+                <img src="img/premio03.png">
+                <img src="img/premio04.png">
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="col-xs-12 col-md-4 text-right rigth-line footer-item">
+                <img src="img/logo-medialab.png" alt="MediaLab - logotipo">
+            </div>
+            <div class="col-xs-12 col-md-4 rigth-line footer-item">
+                <p class="number">+506 - 2291 0691</p>
+                <p>costarica@medialabla.com</p>
+                <p>Sabana Norte - San José - Costa Rica</p>               
+            </div>
+            <div class="col-xs-12 col-md-4 footer-item">
+                <div class="social text-center">
+                	<img src="img/icon-facebook.png">
+                	<img src="img/icon-twitter.png">
+                	<img src="img/icon-instagram.png">
+                </div>
+            </div>           
+
+        </footer>
+    </div>       
 </body>
 </html>

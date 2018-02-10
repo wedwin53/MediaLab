@@ -1,105 +1,357 @@
 body{
-	font-family: 'Montserrat', sans-serif !important;
-	margin: 0px;
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0px;
+    background-color: #eee;    
 }
 header{
-	position: relative;
-	background-color: #41c3d5;
-	height: 80px;
-	padding-top: 1px;
-}
-.contenedor{
-	width: 800px;
-	margin: auto;
-}
-.titulo{
-	text-align: center;
-	font-weight: bold;
-	font-size: 45px;
-	color: white;
-	margin-bottom: 0px;
-	margin-top: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(../img/header.png);
+    min-height: 335px;
+    background-size: 100% auto;
+    background-repeat-y: no-repeat;
+
 
 }
-.title-a{
-	text-align: center;
-	font-size: 15px;
-	font-weight: normal;
-	color: white;
-	margin-top: 5px;
+.container{
+	background-color: #fff;
+}
+
+.titulo{
+    padding: 0 10px 0 10px;
+}
+
+
+.titulo h1{
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+.titulo h3{
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    margin-top: 5px;
 }
 .button{
-	background: white;
-	color: #41c3d5;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	border: none;
-	padding: 10px 20px;
-	margin-left: 300px;
+    background: white;
+    color: #41c3d5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
 }
-.portada{
-	background-color: #41c3d5;
-	padding-bottom: 40px;
+
+.logo{
+    align-self: stretch;
+    padding: 15px 0 0 25px;
 }
-.logotipo img{
-	width: auto;
-	height: 70px;
-	float: right;
-	padding-top: 15px;
-	margin-right: 40px;
+
+.estrategia{
+    margin-top: 15px;
+    padding-right: 20px;
 }
-.estrategia-text{
-	margin-top: 15px;
-	padding-right: 20px;
+.estrategia h3{
+    font-weight: bold;
+    color: #41c3d5;
+    font-size: 50px;
 }
-.estrategia-text h3{
-	font-weight: bold;
-	color: #41c3d5;
-	font-size: 50px;
+.estrategia p, .estrategia ul{
+    font-size: 12px;
+    color: #686868 !important;
+    line-height: 2;
 }
-.estrategia-text p{
-	font-size: 12px;
+
+.estrategia li {
+    list-style-image: url(../img/check.png);
 }
+
 .estrategia .contenedor{
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .formulario{
-	display: flex;
-	width: 400px;
-	padding: 50px 10px;
+    padding: 60px 85px
 }
-#lb-conozcamonos{
-	color: #686868 !important;
-	font-weight: bold;
-	font-size: medium;
-	margin-left: 30px;
+
+.lb-conozcamonos{
+    color: #686868 !important;
+    font-weight: bold;
+    font-size: medium;
 }
 .enviar{
-	background: #41c3d5;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	border: solid;
-	padding: 10px 40px;
-	margin-left: 45px;
+    background: #41c3d5;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: solid;
+    padding: 10px 40px;
 }
 #linea{ 
    border: 1;
-   height: 2px;
-   text-align: center;
+   height: 2px;  
    background-image: linear-gradient(left, #fff, #000, #fff);
 }
+
 .clientes{
-	margin-top: 40px;
+    margin-top: 40px;
 }
-.contenedor-cli h3{
-	color: #41c3d5;
-	font-weight: bold;
-	width: 800px;
-	margin:auto;
-	padding-bottom: 20px;
-	text-align: center;
+
+.clientes h3 {
+    color: #53b5d6;
+    font-weight: bold;
+    margin: auto;
+    font-size: 30px;
+}
+
+.otros-servicios {
+    background-image: url(../img/otros-servicios.png);  
+    padding-top: 1px;
+    min-height: 615px;
+    background-size: cover;
+    background-size: 100% auto
 
 }
 
+.otros-servicios h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.servicios {
+    padding: 130px;
+}
+
+.servicio-item{
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.servicio-item h4 {
+    margin: 10px 0 0 0;
+    border-top: 1px solid #c3c3c3;
+    padding: 10px 0 10px 0;
+    color: #686868;
+    font-weight: bold;
+}
+
+.servicio-item p {
+    color: #686868;
+    padding: 15px;
+}
+
+.servicio-item button {
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    background-color: #53b5d6;
+    color: #fff;
+    border-style: none;
+}
+
+.descubre {
+    margin: 50px;
+    padding: 8px 20px 5px 20px;
+    text-transform: uppercase;
+    border-style: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.premios-certificados {
+    padding: 70px;
+}
+
+.premios-certificados img{
+    margin-right: 10px;
+}
+
+.premios-certificados h2 {
+    text-transform: uppercase;
+    color: #53b5d6;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.premios-certificados .rigth-line {
+    border-right: 1px solid #999;
+}
+
+footer {
+    background-color: #2a2a2a;
+    padding: 25px 0px 0px 0px;
+}
+
+footer .number{
+    color: #fff;
+}
+
+footer p{
+    color: #686868;
+    line-height: 1;
+}
+
+footer .rigth-line {
+    border-right: 1px solid #555;
+}
+
+footer .footer-item {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .social  {
+   
+}
+
+footer .social img {
+    padding: 5px;
+}
+
+.col-centered {
+    float: none;
+    min-height: 98px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+      font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev            { left: -50%; }
+    .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+
+    header{
+        min-height: initial;
+        padding-bottom: 15px;
+    }
+    .logo img {
+        width: 50%;
+    }
+    .titulo h1{
+        font-size: 25px;
+    }
+    .titulo h3{
+        font-size: 10px;
+    }
+    .button{
+            padding: 5px 10px
+    }
+    .servicios{
+        padding:50px;
+    }
+
+    .premios-certificados .rigth-line {
+        border: none;
+    }
+    .premios-certificados h2 {
+        font-size: 15px;
+    }
+    .premios-certificados img {
+        margin-right: 10px;
+        width: 75%;
+    }
+    .estrategia h3 {
+        font-size: 15px;
+    }
+    footer .text-right, footer .social.text-center {
+        text-align: left;
+    }
+}
+
+@media (max-width: 479px) {
+    .servicios{
+        padding: 80px !important;
+    }
+
+    .descubre {
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .clientes h3 {
+        font-size: 15px;
+    }
+}
+
+/*sm*/
+@media (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev            { left: -50%; }
+  .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+       
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+    .carousel-inner .next        { left:  33%; }
+    .carousel-inner .prev            { left: -33%; }
+  .carousel-col                { width: 33%; }
+    .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev            { left: -25%; }
+  .carousel-col                { width: 25%; }
+    .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+    .active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+    width: 306px;
+    height: 230px;
+}
