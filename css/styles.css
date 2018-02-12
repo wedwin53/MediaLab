@@ -277,16 +277,18 @@ footer .social img {
         padding-bottom: 15px;
     }
     .logo img {
-        width: 50%;
+        width: 85%;
     }
     .titulo h1{
-        font-size: 25px;
+        font-size: 18px;
     }
     .titulo h3{
         font-size: 10px;
     }
     .button{
-            padding: 5px 10px
+            padding: 1px 10px 10px;
+            font-size: 10px;
+
     }
     .servicios{
         padding:50px;
@@ -300,7 +302,7 @@ footer .social img {
     }
     .premios-certificados img {
         margin-right: 10px;
-        width: 75%;
+        width: 40%;
     }
     .estrategia h3 {
         font-size: 15px;
