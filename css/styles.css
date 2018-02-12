@@ -222,7 +222,7 @@ footer .footer-item {
 }
 
 footer .social  {
-   
+   cursor: pointer;
 }
 
 footer .social img {
@@ -309,6 +309,10 @@ footer .social img {
     }
     footer .text-right, footer .social.text-center {
         text-align: left;
+    }
+    footer .footer-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
     }
 }
 
