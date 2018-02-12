@@ -1,7 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif !important;
     margin: 0px;
-    background-color: #eee;    
+    /*background-color: #eee;    */
 }
 header{
     display: flex;
@@ -10,14 +10,20 @@ header{
     align-content: center;
     align-items: center;
     background-image: url(../img/header.png);
-    min-height: 335px;
+    /*width: 100%;*/
+    min-height: 360px;
     background-size: 100% auto;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
 
 
 }
+.anime img:hover{
+      transform: rotate(720deg) scale(2,2);
+      transition: all 2s ease-in-out;
+   }
 .container{
-	background-color: #fff;
+	/*background-color: #fff;*/
+    width: 100% !important;
 }
 
 .titulo{
@@ -193,7 +199,10 @@ footer {
 }
 
 footer .number{
-    color: #fff;
+    color: #fff !important;
+}
+a{
+    color: #68675f !important;   
 }
 
 footer p{
