@@ -271,10 +271,10 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
     background-image: url(../img/otros-servicios.png);
+    background-repeat: no-repeat;
     padding-top: 1px;
-    min-height: 615px;
+    min-height: 600px;
     background-size: cover;
-    background-size: 100% auto;
 }
 
 /* Next & previous buttons */
